@@ -14,15 +14,10 @@ public class sinifiGecme {
         kim = input.nextDouble();
         System.out.print("Müzik notunuzu giriniz: ");
         mzk = input.nextDouble();
-        if ((0 > mat) || (mat > 100)) {
-            System.out.print("Geçerli bir değer giriniz.");
-        } else if ((0 > fiz) || (fiz > 100)) {
-            System.out.print("Geçerli bir değer giriniz.");
-        } else if ((0 > tur) || (tur > 100)) {
-            System.out.print("Geçerli bir değer giriniz.");
-        } else if ((0 > kim) && (kim > 100)) {
-            System.out.print("Geçerli bir değer giriniz.");
-        } else if ((0 > mzk) || (mzk > 100)) {
+        if (((0 > mat) || (mat > 100))
+                || ((0 > fiz) || (fiz > 100))
+                || ((0 > tur) || (tur > 100))
+                || ((0 > mzk) || (mzk > 100))) {
             System.out.print("Geçerli bir değer giriniz.");
         } else {
             ort = (mat + fiz + tur + kim + mzk) / 5;
@@ -32,5 +27,8 @@ public class sinifiGecme {
                 System.out.print("Ortalamanız: " + ort + " Tebrikler geçtiniz.");
             }
         }
+
+
     }
 }
+
