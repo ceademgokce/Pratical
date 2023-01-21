@@ -24,7 +24,7 @@ public class notHesaplama {
         boolean deger=(ortalama>=50);  //Burada geçme-kalma durumunu irdeledim.
         String yorum = deger ? "Harika!! Gectin, Notun: ":"Maalesef :(( Kaldın, Notun: ";
         System.out.print(yorum + ortalama);
-
+//Bu kadar
 
     }
 
