@@ -1,3 +1,5 @@
+package expsLoops;
+
 import java.util.Scanner;
 
 public class onikiyeBol {

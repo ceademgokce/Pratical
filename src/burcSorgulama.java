@@ -13,7 +13,7 @@ public class burcSorgulama {
 
         if (ay.equals("1") || ay.equals("Ocak")) {
             if ((1<=gun)&&(gun<=31)){
-                if (gun<=21){
+                if (gun%2<=21){
                 burc = "Oglak";}
                 else {
                 burc = "Kova";
@@ -24,7 +24,7 @@ public class burcSorgulama {
         }
         else
             isError=true;
-
+System.out.print(gun%2);
 if (isError) {
     System.out.print("Hatalı bir giriş yaptınız.");
 }else
